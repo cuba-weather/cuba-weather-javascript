@@ -9,7 +9,7 @@ async function main() {
     let error = {
       status: err.response.status,
       statusText: err.response.statusText,
-      locationStr
+      locationStr,
     }
     console.log(error)
   }

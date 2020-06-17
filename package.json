@@ -1,10 +1,11 @@
 {
   "name": "cuba-weather-javascript",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple SDK for cuba_weather API",
   "main": "index.js",
   "scripts": {
-    "example": "node example/index.js"
+    "example": "node example/index.js",
+    "test": "jest"
   },
   "keywords": [
     "cuba-weather",
@@ -20,7 +21,9 @@
     "example": "example",
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kenriortega/cuba-weather-javascript.git"
