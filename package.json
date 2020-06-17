@@ -6,9 +6,6 @@
   "scripts": {
     "example": "node example/index.js"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "keywords": [
     "cuba-weather",
     "javascript"
