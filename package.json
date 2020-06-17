@@ -1,6 +1,6 @@
 {
   "name": "cuba-weather-javascript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple SDK for cuba_weather API",
   "main": "index.js",
   "scripts": {
@@ -13,10 +13,23 @@
     "cuba-weather",
     "javascript"
   ],
-  "author": "kenriortega <kenriortega>github.com",
+  "author": "kenriortega",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
     "moment": "^2.26.0"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenriortega/cuba-weather-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenriortega/cuba-weather-javascript/issues"
+  },
+  "homepage": "https://github.com/kenriortega/cuba-weather-javascript#readme"
 }
