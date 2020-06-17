@@ -6,8 +6,14 @@
   "scripts": {
     "example": "node example/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "cuba-weather",
+    "javascript"
+  ],
+  "author": "kenriortega <kenriortega>github.com",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
