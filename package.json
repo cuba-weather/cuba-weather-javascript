@@ -1,6 +1,6 @@
 {
   "name": "cuba-weather-javascript",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple SDK for cuba_weather API",
   "main": "index.js",
   "scripts": {
