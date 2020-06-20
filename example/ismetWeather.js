@@ -1,17 +1,12 @@
 const { IsmetWeather, IsmetClient } = require('../lib')
 
 async function main() {
-  let locationStr = 'Municipio Especial Isla de la Juventud'
   try {
     let res = await IsmetClient.get()
-    console.log(res)
+    let weather = new IsmetWeather(res.data)
+    console.log(weather.getAllDataFromIsmet())
   } catch (err) {
-    let error = {
-      status: err.response.status,
-      statusText: err.response.statusText,
-      locationStr,
-    }
-    console.log(error)
+    console.log(err)
   }
 }
 
