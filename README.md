@@ -18,15 +18,16 @@ You can also clone or download this repository and at the root of the project do
 git clone https://github.com/kenriortega/cuba-weather-javascript.git
 ```
 
-## Usage
+## Test
 
 ```bash
-npm run example
+npm test
 ```
 
-### Package
+### Package Red Cuba Client
 
 ```javascript
+const { RCApiClient, RCWeather } = require('../lib')
 async function main() {
   let locationStr = 'Municipio Especial Isla de la Juventud'
   try {
@@ -37,9 +38,27 @@ async function main() {
     let error = {
       status: err.response.status,
       statusText: err.response.statusText,
-      locationStr
+      locationStr,
     }
     console.log(error)
+  }
+}
+
+main().catch(console.error)
+```
+
+### Package Ismet Client
+
+```javascript
+const { IsmetWeather, IsmetClient } = require('../lib')
+
+async function main() {
+  try {
+    let res = await IsmetClient.get()
+    let weather = new IsmetWeather(res.data)
+    console.log(weather.getAllDataFromIsmet())
+  } catch (err) {
+    console.log(err)
   }
 }
 
