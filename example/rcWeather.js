@@ -6,7 +6,7 @@ async function main() {
     let weather = new RCWeather(res.data.data)
     console.log(weather.weathertoString())
   } catch (err) {
-    console.log(error)
+    console.log(err)
   }
 }
 
