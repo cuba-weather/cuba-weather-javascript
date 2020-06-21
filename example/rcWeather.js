@@ -6,11 +6,6 @@ async function main() {
     let weather = new RCWeather(res.data.data)
     console.log(weather.weathertoString())
   } catch (err) {
-    let error = {
-      status: err.response.status,
-      statusText: err.response.statusText,
-      locationStr,
-    }
     console.log(error)
   }
 }
