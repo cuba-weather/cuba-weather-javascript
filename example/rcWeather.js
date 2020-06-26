@@ -1,4 +1,4 @@
-const { RCApiClient, RCWeather } = require('../lib')
+const { RCApiClient, RCWeather } = require('../index')
 async function main() {
   let locationStr = 'Municipio Especial Isla de la Juventud'
   try {

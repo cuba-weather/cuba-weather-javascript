@@ -3,9 +3,9 @@ const {
   MUNICIPALITIES,
   ISMET_LOCATIONS,
   RED_CUBA_SOURCE,
-} = require('./constants')
-const { RCApiClient, IsmetClient, UtilsService } = require('./services')
-const { RCWeather, IsmetWeather } = require('./models')
+} = require('./lib/constants')
+const { RCApiClient, IsmetClient, UtilsService } = require('./lib/services')
+const { RCWeather, IsmetWeather } = require('./lib/models')
 
 module.exports = {
   MUNICIPALITIES,
