@@ -37,6 +37,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
         with:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
@@ -44,5 +46,4 @@ jobs:
       - run: npm ci
       - run: echo registry=https://npm.pkg.github.com/kenriortega >> .npmrc
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
+
