@@ -1,5 +1,5 @@
 {
-  "name": "@kenriortega/cuba-weather-javascript",
+  "name": "cuba-weather-javascript",
   "version": "1.1.0",
   "description": "Simple SDK for cuba_weather API",
   "main": "index.js",
