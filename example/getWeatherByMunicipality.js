@@ -4,7 +4,7 @@ const {
   RED_CUBA_SOURCE,
   MUNICIPALITIES,
   UtilsService,
-} = require('../lib')
+} = require('../index')
 async function main() {
   let locationStr = 'cerro'
   let municipality = MUNICIPALITIES.find(
