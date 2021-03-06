@@ -15,7 +15,7 @@ npm install cuba-weather-javascript
 You can also clone or download this repository and at the root of the project do:
 
 ```bash
-git clone https://github.com/kenriortega/cuba-weather-javascript.git
+git clone https://github.com/cuba-weather/cuba-weather-javascript.git
 ```
 
 ## Test
