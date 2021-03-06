@@ -27,7 +27,7 @@ npm test
 ### Package Red Cuba Client
 
 ```javascript
-const { RCApiClient, RCWeather } = require('../lib')
+const { RCApiClient, RCWeather } = require('../index')
 async function main() {
   let locationStr = 'Municipio Especial Isla de la Juventud'
   try {
@@ -47,24 +47,6 @@ async function main() {
 main().catch(console.error)
 ```
 
-### Package Ismet Client
-
-```javascript
-const { IsmetWeather, IsmetClient } = require('../lib')
-
-async function main() {
-  try {
-    let res = await IsmetClient.get()
-    let weather = new IsmetWeather(res.data)
-    console.log(weather.getAllDataFromIsmet())
-  } catch (err) {
-    console.log(err)
-  }
-}
-
-main().catch(console.error)
-```
-
 ### Get weather from RDcuba by municipality
 
 ```javascript
@@ -74,7 +56,7 @@ const {
   RED_CUBA_SOURCE,
   MUNICIPALITIES,
   UtilsService,
-} = require('../lib')
+} = require('../index')
 async function main() {
   let locationStr = 'cerro'
   let municipality = MUNICIPALITIES.find(
